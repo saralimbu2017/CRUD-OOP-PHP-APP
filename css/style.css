@@ -1,0 +1,27 @@
+body {
+  background-color: #e6ad2e;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 auto;
+  width: 800px;
+}
+.headerOption, .footerOption {
+  background: #ffffff;
+  width: 450px;
+  height: 80px;
+  padding: 10px 100px 10px 250px;
+  margin-top:15px;
+}
+.footerOption  h2 {
+  font-size: 12px;
+} 
+.content {
+  border: 5px solid #ffffff;;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 600px;
+  min-height: 550px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
