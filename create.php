@@ -2,6 +2,7 @@
   include 'header.php'; 
   include 'config.php'; 
   include 'Database.php'; 
+
   $db = new Database();
   if(isset($_POST["submit"])) {
     $name = mysqli_real_escape_string($db->link, $_POST['name']);
@@ -16,6 +17,10 @@
     }
 
    }
+
+  if(isset($error)) {
+    echo "<span>".$error."</span>";
+  }
  
 ?>
 <form action="create.php" method="post">
