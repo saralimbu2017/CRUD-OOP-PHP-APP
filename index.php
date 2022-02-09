@@ -37,6 +37,7 @@
     }
   
   ?>
+  <a href="create.php"> Create </a>
 </table>
 
 
