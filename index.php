@@ -22,9 +22,10 @@
     
   ?>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> <?php echo $row['name'];?> </td>
+    <td><?php echo $row['email'];?></td>
+    <td><?php echo $row['skill'];?></td>
+    <td><a href="">Edit</a></td>
   </tr>
   <?php 
       }
