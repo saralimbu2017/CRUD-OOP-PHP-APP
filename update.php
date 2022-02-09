@@ -58,8 +58,9 @@
     <tr>
       <td></td>
       <td>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Update">
         <input type="reset" value="Cancel">
+        <input type="submit" name="delete" value="Delete">
       </td>
     </tr>
   </table>
