@@ -27,6 +27,10 @@
 
    }
 
+  if(isset($_POST['delete'])) {
+    $query = "DELETE FROM Student WHERE id = $id";
+    $deleteData = $db->delete($query);
+  }
   if(isset($error)) {
     echo "<span>".$error."</span>";
   }
