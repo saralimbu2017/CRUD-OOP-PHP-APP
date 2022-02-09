@@ -30,7 +30,10 @@
   <?php 
       }
     } else {
+  ?>
+  
       <p>Empty! No data.</p>
+  <?php 
     }
   
   ?>
