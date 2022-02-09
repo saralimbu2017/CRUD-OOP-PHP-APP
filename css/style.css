@@ -25,3 +25,12 @@ body {
   margin-bottom: 8px;
   margin-top: 8px;
 }
+
+.mainTable {
+  width: 100%;
+  border: 1px solid;
+  margin: 20px 0;
+}
+.mainTable td {
+  text-align: center;
+}
