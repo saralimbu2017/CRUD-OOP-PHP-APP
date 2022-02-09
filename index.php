@@ -1,11 +1,18 @@
 <?php 
+  //inlcuding the necessary files
   include 'header.php'; 
   include 'config.php'; 
   include 'Database.php'; 
 
+  //creating database object and stating the query statement
   $db = new Database();
   $query = "SELECT * FROM Student";
   $data = $db->select($query);
+
+  //Displaying message if any passed by GET method
+  if(!isset($_GET['msg'])) {
+    echo "<span style='color:green'>".$GET['msg']."</span>";
+  }
 
 ?>
 <table class="mainTable">
