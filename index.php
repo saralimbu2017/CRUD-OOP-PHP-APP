@@ -15,11 +15,24 @@
     <th>Skill</th>
     <th>Action</th>
   </tr>
+  <?php
+    //check for data
+    if($data) {
+      while($row = $data->fetch_assoc()){
+    
+  ?>
   <tr>
     <td></td>
     <td></td>
     <td></td>
   </tr>
+  <?php 
+      }
+    } else {
+      <p>Empty! No data.</p>
+    }
+  
+  ?>
 </table>
 
 
