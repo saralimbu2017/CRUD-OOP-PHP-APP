@@ -13,6 +13,7 @@
       $error = "Field should not be empty";
     } else {
       $query = "INSERT INTO Student(name, email, skill) Values('$name', '$email', '$skill')";
+      $db->insert($query);
     }
 
    }
