@@ -47,6 +47,18 @@
       }
 
     }
+
+      //Update data in database
+      public function update($query) {
+        $update_row = $this->link->query($query) or die($this->link->error.__LINE__);
+        if($update_row) {
+          header("Location: index.php?msg=".urlencode('Data inserted'));
+          exit();
+        } else {
+          die("Error:(".$this->link->error.")".$this->link->error);
+        }
+  
+      }
   }
 
 
