@@ -2,6 +2,20 @@
   include 'header.php'; 
   include 'config.php'; 
   include 'Database.php'; 
+
+  $db = new Database();
+  if(isset($_POST["submit"])) {
+    $name = mysqli_real_escape_string($_POST['name']);
+    $email = mysqli_real_escape_string($_POST['email']);
+    $skill = mysqli_real_escape_string($_POST['skill']);
+
+    if($name == "" || $email == "" || $skill == "") {
+      $error = "Field should not be empty";
+    } else {
+      $query = "INSERT INTO Student(name, email, skill) Values('$name', '$email', '$skill')";
+    }
+
+   }
  
 ?>
 <form action="create.php" method="post">
