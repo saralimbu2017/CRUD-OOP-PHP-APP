@@ -11,12 +11,12 @@
     public $error;
 
     //constructor method automatically loadding connectDb method to setup connection with database
-    private function __construct() {
+    public function __construct() {
       $this->connectDB();
     }
 
     //Setting up database connection
-    private function connectDB() {
+    public function connectDB() {
       $this->link = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
 
       //generate error if database connection fails
@@ -27,7 +27,7 @@
     }
 
     //Querying data
-    private function select($query) {
+    public function select($query) {
       $result = $this->link->query($query) or die($this->link->error.__LINE__);
       if($result->num_rows > 0) {
         return $result;
